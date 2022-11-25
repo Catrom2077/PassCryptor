@@ -2,7 +2,7 @@
 
 namespace PassCryptor.Domain.Models.Node
 {
-    public class PasswordNode : INode<INodeData>
+    public class PasswordNode : INode
     {
         public PasswordNode(string nodeName, INodeData nodeData, string key)
         {
@@ -11,10 +11,10 @@ namespace PassCryptor.Domain.Models.Node
             _key = key;
         }
 
-        public string NodeName => _nodeName;
+        public string Name => _nodeName;
         private readonly string _nodeName = string.Empty;
 
-        public INodeData NodeData => _nodeData;
+        public INodeData Data => _nodeData;
         private readonly INodeData _nodeData;
 
         public string Key => _key;

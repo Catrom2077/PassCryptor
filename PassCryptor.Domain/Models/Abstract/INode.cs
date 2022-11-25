@@ -1,10 +1,10 @@
 ﻿namespace PassCryptor.Domain.Models.Abstract
 {
-    public interface INode<T> where T : INodeData
+    public interface INode
     {
-        public string NodeName { get; }
+        public string Name { get; }
 
-        public T NodeData { get; }
+        public INodeData Data { get; }
 
         public string Key { get; }
     }
