@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{79DF799B-7167-4F97-9013-2A403D1F0AB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{BAAA521D-0BE1-4C88-9B42-3EB27CE6E874}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{FEC2358E-5920-4DB8-8A6B-00DEB44F1AE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PassCryptorApp", "PassCryptorApp", "{932CCFC6-3EAA-4E0F-8067-18674D571AC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PassCryptorCore", "PassCryptorCore", "{CA4CC4C9-D770-438B-900C-966B1E26D205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassCryptor.Domain", "PassCryptor.Domain\PassCryptor.Domain.csproj", "{EE2DE595-BC23-4C79-8A74-031F6C0564D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE2DE595-BC23-4C79-8A74-031F6C0564D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2DE595-BC23-4C79-8A74-031F6C0564D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2DE595-BC23-4C79-8A74-031F6C0564D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2DE595-BC23-4C79-8A74-031F6C0564D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{932CCFC6-3EAA-4E0F-8067-18674D571AC3} = {BAAA521D-0BE1-4C88-9B42-3EB27CE6E874}
+		{CA4CC4C9-D770-438B-900C-966B1E26D205} = {BAAA521D-0BE1-4C88-9B42-3EB27CE6E874}
+		{EE2DE595-BC23-4C79-8A74-031F6C0564D1} = {CA4CC4C9-D770-438B-900C-966B1E26D205}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {246AE4A1-5441-41A6-8644-F0A01E843C06}
+	EndGlobalSection
+EndGlobal
