@@ -2,10 +2,10 @@
 {
     public interface INodeData
     {
-        public string? Password { get; }
+        public string Password { get; }
 
-        public string? Login { get; }
+        public string Login { get; }
 
-        public string? Email { get; }
+        public string Email { get; }
     }
 }

@@ -6,6 +6,6 @@
 
         public INodeData Data { get; }
 
-        public string Key { get; }
+        public string HashKey { get; }
     }
 }

@@ -17,7 +17,7 @@ namespace PassCryptor.Domain.Models.Node
         public INodeData Data => _nodeData;
         private readonly INodeData _nodeData;
 
-        public string Key => _key;
+        public string HashKey => _key;
         private readonly string _key = string.Empty;
 
         public override string ToString() => _nodeName;
