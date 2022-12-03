@@ -15,9 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PassCryptorCore", "PassCryp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassCryptor.Domain", "PassCryptor.Domain\PassCryptor.Domain.csproj", "{EE2DE595-BC23-4C79-8A74-031F6C0564D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassCryptor.Encoder", "PassCryptor.Encoder\PassCryptor.Encoder.csproj", "{428A2BCF-EFE9-4B13-BD45-BA7C5CE66BCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassCryptor.Encoder", "PassCryptor.Encoder\PassCryptor.Encoder.csproj", "{428A2BCF-EFE9-4B13-BD45-BA7C5CE66BCD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F770A721-A6FD-417C-80A7-46EDF3675753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassCryptor.Tests", "PassCryptor.Tests\PassCryptor.Tests.csproj", "{5F8AC622-D4D3-4A97-B9A6-A29C395F2723}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{428A2BCF-EFE9-4B13-BD45-BA7C5CE66BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{428A2BCF-EFE9-4B13-BD45-BA7C5CE66BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{428A2BCF-EFE9-4B13-BD45-BA7C5CE66BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8AC622-D4D3-4A97-B9A6-A29C395F2723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8AC622-D4D3-4A97-B9A6-A29C395F2723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8AC622-D4D3-4A97-B9A6-A29C395F2723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8AC622-D4D3-4A97-B9A6-A29C395F2723}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 		{CA4CC4C9-D770-438B-900C-966B1E26D205} = {BAAA521D-0BE1-4C88-9B42-3EB27CE6E874}
 		{EE2DE595-BC23-4C79-8A74-031F6C0564D1} = {CA4CC4C9-D770-438B-900C-966B1E26D205}
 		{428A2BCF-EFE9-4B13-BD45-BA7C5CE66BCD} = {CA4CC4C9-D770-438B-900C-966B1E26D205}
+		{5F8AC622-D4D3-4A97-B9A6-A29C395F2723} = {F770A721-A6FD-417C-80A7-46EDF3675753}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {246AE4A1-5441-41A6-8644-F0A01E843C06}
