@@ -42,7 +42,7 @@ namespace PassCryptor.Encoder.Controllers.Encoder
 
         private PasswordNode XORChiper(INode node)
         {
-            string[] dataset = { node.Data.Login, node.Data.Email, node.Data.Password };
+            string[] dataset = { node.Data.Password, node.Data.Login, node.Data.Email };
             string[] cryptedDataset = new string[dataset.Length];
             string key = _encoder.Config.XORKey;
 

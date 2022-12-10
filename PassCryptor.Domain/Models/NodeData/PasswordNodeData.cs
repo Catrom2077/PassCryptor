@@ -11,13 +11,13 @@ namespace PassCryptor.Domain.Models.NodeData
             _email = email;
         }
 
-        public string? Password => _password;
-        private readonly string? _password = string.Empty;
+        public string Password => _password;
+        private readonly string _password = string.Empty;
 
-        public string? Login => _login;
-        private readonly string? _login = string.Empty;
+        public string Login => _login;
+        private readonly string _login = string.Empty;
 
-        public string? Email => _email;
-        private readonly string? _email = string.Empty;
+        public string Email => _email;
+        private readonly string _email = string.Empty;
     }
 }
