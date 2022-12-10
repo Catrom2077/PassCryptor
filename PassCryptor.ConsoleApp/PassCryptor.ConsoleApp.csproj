@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PassCryptor.Encoder\PassCryptor.Encoder.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Resources\Banner.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

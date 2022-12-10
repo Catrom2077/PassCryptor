@@ -5,6 +5,8 @@
         public bool IsExit => _isExit;
         private bool _isExit = false;
 
+        private readonly MenuMessages _menuMessages = new();
+
         public void DrawBanner()
         {
             string banner = File.ReadAllText($"{Directory.GetCurrentDirectory()}\\Resources\\Banner.txt");
@@ -24,73 +26,41 @@
         public void HandleInput()
         {
             ConsoleKey key;
-            WriteMessage("Enter option: ");
+            _menuMessages.WriteMessage("Enter option: ");
 
             key = Console.ReadKey(true).Key;
 
             switch(key)
             {
                 case ConsoleKey.D1:
-                    WriteMessage("Creating node...");
+                    _menuMessages.WriteMessage("Creating node...");
                     break;
 
                 case ConsoleKey.D2:
-                    WriteMessage("Reading node...");
+                    _menuMessages.WriteMessage("Reading node...");
                     break;
 
                 case ConsoleKey.D3:
-                    WriteMessage("Updating node...");
+                    _menuMessages.WriteMessage("Updating node...");
                     break;
 
                 case ConsoleKey.D4:
-                    WriteMessage("Deleting node...");
+                    _menuMessages.WriteMessage("Deleting node...");
                     break;
 
                 case ConsoleKey.D5:
-                    WriteMessage("Geting node list...");
+                    _menuMessages.WriteMessage("Geting node list...");
                     break;
 
                 case ConsoleKey.D0:
-                    WriteWarrning("Exit the PassCryptor...");
+                    _menuMessages.WriteWarrning("Exit the PassCryptor...");
                     _isExit = true;
                     break;
 
                 default:
-                    WriteError("Options is incorrect!");
+                    _menuMessages.WriteError("Options is incorrect!");
                     break;
             }
         }
-
-        #region Reusable Methods
-
-        private void WriteError(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"[err] {message}");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
-        private void WriteWarrning(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine($"[wrn] {message}");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
-        private void WriteSuccess(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"[ok] {message}");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
-        private void WriteMessage(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"[msg] {message}");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
-        #endregion
     }
 }
