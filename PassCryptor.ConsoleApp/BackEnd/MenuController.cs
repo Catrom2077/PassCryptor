@@ -6,6 +6,7 @@
         private bool _isExit = false;
 
         private readonly MenuMessages _menuMessages = new();
+        private readonly PassCryptorService _service = new();
 
         public void DrawBanner()
         {
@@ -34,6 +35,7 @@
             {
                 case ConsoleKey.D1:
                     _menuMessages.WriteMessage("Creating node...");
+                    _service.CreateAndSavePassNode();
                     break;
 
                 case ConsoleKey.D2:
